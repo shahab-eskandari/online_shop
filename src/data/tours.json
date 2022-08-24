@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "name": "Mountain Biking and Cycling",
+        "discription": "Your time machine travel on two wheels",
+        "starting": "12 Dec 2021",
+        "end": "21 Dec 2021",
+        "duration": 9,
+        "price" : 185.99,
+        "imgUrl": "/img/"
+    },
+    {
+        "id": "2",
+        "name": "Mountain Biking and Cycling",
+        "discription": "Your time machine travel on two wheels",
+        "starting": "12 Dec 2021",
+        "end": "21 Dec 2021",
+        "duration": 9,
+        "price" : 320,
+        "imgUrl": "/img/"
+    },
+    {
+        "id": "3",
+        "name": "Mountain Biking and Cycling",
+        "discription": "Your time machine travel on two wheels",
+        "starting": "12 Dec 2021",
+        "end": "21 Dec 2021",
+        "duration": 9,
+        "price" : 400,
+        "imgUrl": "/img/"
+    },
+    {
+        "id": "4",
+        "name": "Mountain Biking and Cycling",
+        "discription": "Your time machine travel on two wheels",
+        "starting": "12 Dec 2021",
+        "end": "21 Dec 2021",
+        "duration": 9,
+        "price" : 215.99,
+        "imgUrl": "/img/"
+    }
+]
