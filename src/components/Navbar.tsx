@@ -1,6 +1,9 @@
 import {Container, Button, Nav, Navbar as BSNav} from 'react-bootstrap'
 import {NavLink} from 'react-router-dom';
+import { useCart } from '../context/cardContext';
+
 export function Navbar () {
+    const {openCart, closeCart, cartQuantity} = useCart(); 
     return(
         <BSNav className='bg-white shadow-sm mb-3' sticky='top'>
             <Container>
@@ -9,7 +12,7 @@ export function Navbar () {
                     <Nav.Link to='/cat1' as={NavLink}>Category 1</Nav.Link>
                     <Nav.Link to='/cat2' as={NavLink}>Category 2</Nav.Link>
                 </Nav>
-                <Button style={{position:'relative'}}>
+                <Button style={{position:'relative'}} onClick={()=>openCart()}>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="2rem" 
@@ -28,7 +31,7 @@ export function Navbar () {
                         bottom: 0, 
                         right:0,
                         transform: 'translate(-150%,25%)' }}>
-                    9
+                    {cartQuantity}
                 </div>
                 </Button>
             </Container>
