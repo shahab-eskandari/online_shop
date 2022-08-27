@@ -14,9 +14,15 @@ type TourItemProps = {
 }
 
 export function ToursItem(props: TourItemProps) {
-    const {getItemsQuantity, increaseQuantity, decreaseQuantity, removeItem} = useCart();
+    const {
+        getItemsQuantity, 
+        increaseQuantity, 
+        decreaseQuantity, 
+        removeItem} = useCart();
+    
     const quantity = getItemsQuantity(props.id) ; 
-     return (
+    
+    return (
         <Card className='h-100'>
             <Card.Body className='d-flex flex-column'>
                 <Card.Title className='d-flex justify-content-between align-items-baseline mb-4'>
@@ -57,12 +63,11 @@ export function ToursItem(props: TourItemProps) {
                             size='sm'
                             onClick={()=>removeItem(props.id)}
                         >
-                            Remoove
+                            Remove
                         </Button>
                         </div>}
                 </div>
             </Card.Body>
         </Card>
-     )
-
+    )
 }
